@@ -89,6 +89,7 @@ a:hover {
 .webp .container {
   background-image: url('../img/background.webp');
   height: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,7 +108,8 @@ a:hover {
 .header {
   overflow: hidden;
   background-color: rgba(14, 14, 17, 0.6);
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   bottom: 0;
   width: 100%;
   padding: 1.2rem 2rem 1rem;
@@ -141,6 +143,32 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p:first-of-type{
+    font-size: 1rem;
+}
+
+.footer p:last-of-type{
+    font-size: 0.6rem;
+}
+
+.footer-mobile {
+    text-align: center;
+}
+
+.footer-mobile p:first-of-type{
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+}
+
+.footer-mobile p:last-of-type{
+    font-size: 0.6rem;
 }
 
 @media (max-width: 768px) {
@@ -178,6 +206,10 @@ a:hover {
 
   .sidebar .nav-link {
     padding: 0;
+  }
+
+  .footer {
+      display: none;
   }
 }
 
