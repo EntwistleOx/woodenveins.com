@@ -171,7 +171,7 @@ a:hover {
     font-size: 0.6rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 844px) {
   .header {
     padding: 1rem 2rem;
   }
