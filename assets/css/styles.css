@@ -106,6 +106,12 @@
     padding: 1.2rem 2rem 1rem;
   }
   
+  .header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   .nav {
     display: flex;
     justify-content: space-between;
