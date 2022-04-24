@@ -145,7 +145,16 @@ a:hover {
   gap: 1.6rem;
 }
 
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
 .footer {
+    background: #000000;
     text-align: center;
     padding: 2rem;
 }
@@ -208,6 +217,10 @@ a:hover {
     padding: 0;
   }
 
+  .media {
+    flex-wrap: wrap;
+  }
+  
   .footer {
       display: none;
   }

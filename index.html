@@ -12,7 +12,7 @@
     />
     <meta
       name="keywords"
-      content="Wooden Veins, Avant Garde, Doom Metal, Black Metal, Chilean Metal, Chile"
+      content="Wooden Veins, In Finitude, Metal, Avant Garde, Doom Metal, Black Metal, Chilean Metal, Chile"
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Wooden Veins" key="ogtitle" />
@@ -32,7 +32,7 @@
     <meta name="twitter:creator" content="Juan Díaz Ortega" key="twhandle" />
 
     <meta name="robots" content="index" />
-    <title>Wooden Veins | Official Website</title>
+    <title>Wooden Veins | In Finitude</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -159,6 +159,10 @@
       </div>
     </div>
 
+    <div class="media">
+        <iframe src="https://open.spotify.com/embed/album/6xNglCwGVdHCDIhD7S0xR2" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://www.youtube.com/embed/HKJFaNO5g8g" width="100%" height="380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div class="footer">
         <p>&copy; Wooden Veins 2022</p>
         <p>
@@ -172,12 +176,14 @@
         document.getElementById('sidebar').style.width = '120px';
         document.getElementById('main').style.marginLeft = '120px';
         document.getElementById('overlay').style.display = 'block';
+        document.body.style.position = 'fixed';
       }
 
       function closeNav() {
         document.getElementById('sidebar').style.width = '0';
         document.getElementById('main').style.marginLeft = '0';
         document.getElementById('overlay').style.display = 'none';
+        document.body.style.position = 'initial';
       }
     </script>
   </body>
