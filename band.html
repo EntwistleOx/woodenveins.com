@@ -45,7 +45,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -58,54 +58,13 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
         <i class="fa-solid fa-xmark fa-1x"></i>
       </a>
-      <a
-        class="nav-link"
-        href="https://www.instagram.com/woodenveins/"
-        target="_blank"
-      >
-        <i class="fa-brands fa-instagram fa-2x"></i>
-      </a>
-      <a
-        class="nav-link"
-        href="https://www.facebook.com/woodenveinsband"
-        target="_blank"
-      >
-        <i class="fa-brands fa-facebook fa-2x"></i>
-      </a>
-      <a
-        class="nav-link"
-        href="https://www.youtube.com/c/WDNVNS?sub_confirmation=1"
-        target="_blank"
-      >
-        <i class="fa-brands fa-youtube fa-2x"></i>
-      </a>
-      <a
-        class="nav-link"
-        href="https://thevinyldivision.bandcamp.com/album/in-finitude"
-        target="_blank"
-      >
-        <i class="fa-brands fa-bandcamp fa-2x"></i>
-      </a>
-      <a
-        class="nav-link"
-        href="https://www.thevinyldivision.shop/search-results?q=wooden+veins"
-        target="_blank"
-      >
-        <i class="fa-solid fa-cart-shopping fa-2x"></i>
-      </a>
-      <a class="nav-link" href="mailto: wdnvns@gmail.com" target="_blank">
-        <i class="fa-solid fa-at fa-2x"></i>
-      </a>
-
-      <div class="footer-mobile">
-        <p>&copy; WDN:VNS 2022</p>
-        <p>
-            Destructured by <br>Juan Díaz Ortega
-        </p>
+      <a class="nav-link" href="/"> HOME </a>
+      <a class="nav-link nav-link__active" href="/band.html"> BAND </a>
+      <a class="nav-link" href="/manifest.html"> MANIFEST </a>
+      <a class="nav-link" href="/contact.html"> CONTACT </a>
     </div>
-    </div>
+    <div id="overlay"></div>
     <div id="main" class="container">
-      <div id="overlay"></div>
       <div class="header">
         <div class="nav">
           <div id="bars" class="nav-bars" onclick="openNav()">
@@ -116,58 +75,87 @@
             <h1 class="nav-logo-mobile">WDN:VNS</h1>
           </div>
           <div class="nav-links">
-            <a
-              class="nav-link"
-              href="https://www.instagram.com/woodenveins/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram fa-2x"></i>
-            </a>
-            <a
-              class="nav-link"
-              href="https://www.facebook.com/woodenveinsband"
-              target="_blank"
-            >
-              <i class="fa-brands fa-facebook fa-2x"></i>
-            </a>
-            <a
-              class="nav-link"
-              href="https://www.youtube.com/c/WDNVNS?sub_confirmation=1"
-              target="_blank"
-            >
-              <i class="fa-brands fa-youtube fa-2x"></i>
-            </a>
-            <a
-              class="nav-link"
-              href="https://thevinyldivision.bandcamp.com/album/in-finitude"
-              target="_blank"
-            >
-              <i class="fa-brands fa-bandcamp fa-2x"></i>
-            </a>
-            <a
-              class="nav-link"
-              href="https://www.thevinyldivision.shop/search-results?q=wooden+veins"
-              target="_blank"
-            >
-              <i class="fa-solid fa-cart-shopping fa-2x"></i>
-            </a>
-            <a class="nav-link" href="mailto: wdnvns@gmail.com" target="_blank">
-              <i class="fa-solid fa-at fa-2x"></i>
-            </a>
+            <a class="nav-link" href="/"> HOME </a>
+            <a class="nav-link nav-link__active" href="/band.html"> BAND </a>
+            <a class="nav-link" href="/manifest.html"> MANIFEST </a>
+            <a class="nav-link" href="/contact.html"> CONTACT </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="media">
-        <iframe src="https://open.spotify.com/embed/album/6xNglCwGVdHCDIhD7S0xR2" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <iframe src="https://www.youtube.com/embed/HKJFaNO5g8g" width="100%" height="380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="band">
+      <div class="band-photo">
+        <picture>
+          <source srcset="./assets/img/band.webp" type="image/webp" />
+          <img src="./assets/img/band.png" alt="band photo" />
+        </picture>
+      </div>
+      <p>
+        Wooden Veins was formed at the end of 2019 in Santiago, Chile. The band
+        combines elements of Doom/Experimental Rock/Avant-garde Metal, with
+        Chilean musicians residing in Chile, Spain, Germany and the Czech
+        Republic.
+      </p>
+      <p>
+        In 2021 they release their debut album “In Finitude” (The Vinyl
+        Division, Spain) highlighted by the national and international press
+        with excellent ratings, positioned as one of the best albums of 2021 by
+        Rockaxis, Metal Addiction, Bulldozer Magazine, Smoke Black, Man of Much
+        Metal (England) and Retumba (Mexico), highlighting the "Top 5" of the
+        best Latin American albums of the metal genre.
+      </p>
+      <p>Wooden Veins are:</p>
+      <ul class="band-list">
+        <li>Alberto Atalah: Drums</li>
+        <li>Javier Cerda: Vox</li>
+        <li>Juan Escobar: Guitars</li>
+        <li>Juan Díaz: Bass Guitar</li>
+        <li>Eduardo Poblete: Synths</li>
+      </ul>
+      <p>
+        Wooden Veins members are endorsed by Pearl Drums, Istanbul Mehmet
+        Cymbals, Ice Stix Germany, Ahead Armor Cases, Optima Strings, Janis.Lv
+        and Custom FX Chile.
+      </p>
     </div>
+
     <div class="footer">
-        <p>&copy; Wooden Veins 2022</p>
-        <p>
-            Destructured by Juan Díaz Ortega
-        </p>
+      <div class="social-links">
+        <a
+          class="social-link"
+          href="https://www.instagram.com/woodenveins/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          class="social-link"
+          href="https://www.facebook.com/woodenveinsband"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          class="social-link"
+          href="https://www.youtube.com/c/WDNVNS?sub_confirmation=1"
+          target="_blank"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a
+          class="social-link"
+          href="https://thevinyldivision.bandcamp.com/album/in-finitude"
+          target="_blank"
+        >
+          <i class="fa-brands fa-bandcamp"></i>
+        </a>
+        <a class="social-link" href="mailto: wdnvns@gmail.com" target="_blank">
+          <i class="fa-solid fa-at"></i>
+        </a>
+      </div>
+      <p>&copy; Wooden Veins 2022</p>
+      <p>Destructured by Juan Díaz Ortega</p>
     </div>
 
     <script src="./assets/js/modernizr-custom.js"></script>
