@@ -25,7 +25,7 @@
     <meta property="og:url" content="https://woodenveins.com/" key="ogurl" />
     <meta
       property="og:image"
-      content="https://woodenveins.com/wdn-vns.png"
+      content="https://woodenveins.com/wdn-vns.jpg"
       key="ogimage"
     />
     <meta name="twitter:card" content="summary" key="twcard" />
@@ -174,20 +174,22 @@
         document.body.style.position = 'initial';
       }
 
-      window.onscroll = function() {myFunction()};
+      window.onscroll = function () {
+        myFunction();
+      };
 
-        var navbar = document.getElementById("header");
-        var sticky = navbar.offsetTop;
+      var navbar = document.getElementById('header');
+      var sticky = navbar.offsetTop;
 
-        function myFunction() {
+      function myFunction() {
         if (window.pageYOffset >= sticky) {
-            navbar.classList.add("header-sticky")
-            navbar.style.bottom = 'auto';
+          navbar.classList.add('header-sticky');
+          navbar.style.bottom = 'auto';
         } else {
-            navbar.classList.remove("header-sticky");
-            navbar.style.bottom = '55%';
+          navbar.classList.remove('header-sticky');
+          navbar.style.bottom = '55%';
         }
-        }
+      }
     </script>
   </body>
 </html>
