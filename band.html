@@ -65,7 +65,7 @@
     </div>
     <div id="overlay"></div>
     <div id="main" class="container">
-      <div class="header">
+      <div id="header" class="header">
         <div class="nav">
           <div id="bars" class="nav-bars" onclick="openNav()">
             <i class="fa-solid fa-bars fa-xl"></i>
@@ -173,6 +173,21 @@
         document.getElementById('overlay').style.display = 'none';
         document.body.style.position = 'initial';
       }
+
+      window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("header");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("header-sticky")
+            navbar.style.bottom = 'auto';
+        } else {
+            navbar.classList.remove("header-sticky");
+            navbar.style.bottom = '55%';
+        }
+        }
     </script>
   </body>
 </html>

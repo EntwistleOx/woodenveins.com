@@ -78,8 +78,8 @@ a {
 
 .webp .container {
   background-image: url('../img/background.webp');
-  height: 50%;
-  background-attachment: fixed;
+  height: 45%;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,8 @@ a {
 
 .no-webp .container {
   background-image: url('../img/background.png');
-  height: 50%;
+  height: 45%;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,10 +101,16 @@ a {
   background-color: rgba(14, 14, 17, 0.6);
   /* position: fixed; */
   position: absolute;
-  bottom: 50%;
+  bottom: 55%;
   width: 100%;
   padding: 1.2rem 2rem 1rem;
 }
+
+.header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 .nav {
   display: flex;
