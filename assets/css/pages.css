@@ -164,11 +164,27 @@ a {
 
 .band,
 .manifest,
-.contact {
+.contact,
+.releases {
   padding: 2rem;
   max-width: 960px;
   margin: auto;
   text-align: justify;
+}
+
+/* .releases .album-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+} */
+
+.releases .rel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .manifest {
@@ -201,12 +217,22 @@ a {
 
 .band .band-photo,
 .manifest .manifest-photo,
-.contact .contact-photo {
+.contact .contact-photo,
+.releases .album-photo {
   display: flex;
   justify-content: center;
   max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
+}
+
+.releases .album-photo {
+    margin-bottom: 0;
+}
+
+.releases .album-player {
+    max-width: 440px;
+    width: 100%;
 }
 
 .band .band-list {
@@ -219,6 +245,10 @@ a {
 .manifest .manifest-photo img {
   width: 200px;
 }
+
+/* .releases .album-photo, .releases .album-player {
+    flex: 1;
+} */
 
 .footer {
   font-family: 'Cinzel', serif;
@@ -287,6 +317,18 @@ a {
 
   .contact .contact-links .contact-link i {
     font-size: 2rem;
+    }
+
+    .releases .album-photo {
+        order: 1;
+    }
+    .releases .album-player {
+        order: 3;
+        max-width: none;
+        width: 100%;
+    }
+    .releases .album-data {
+        order: 2;
     }
 }
 
