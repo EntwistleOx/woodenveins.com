@@ -103,7 +103,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 1.2rem 2rem 1rem;
+    padding: 0.95rem 2rem;
   }
   
   .header-sticky {
@@ -270,6 +270,7 @@
       background-color: rgba(0, 0, 0, 0.3);
       z-index: 0;
       cursor: pointer;
+      padding: 0 5rem;
 
       line-height: 1.5;
       font-family: 'Cinzel', serif;
@@ -288,8 +289,7 @@
     }
 
     #overlay-tearing-seas hr {
-        width: 86%;
-        /* font-size: 3rem; */
+        width: 100%;
         border: none;
         height: 3px;
         color: #ffffff;
@@ -304,9 +304,19 @@
 
     .overlay-tearing-seas-data .overlay-tearing-seas-logo {
         width: 150px;
+        margin: 11rem 0;
     }
 
     #overlay-tearing-seas p {
-        font-size: 3.36rem;
+        font-size: 3.68rem;
         font-weight: 400;
     }
+
+    #overlay-tearing-seas .overlay-tearing-seas-streaming {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+

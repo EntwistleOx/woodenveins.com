@@ -231,6 +231,13 @@ a {
     padding: 1rem 0 0;
 }
 
+.band .band-endorsers-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .band .band-photo,
 .manifest .manifest-photo,
 .contact .contact-photo,
@@ -330,6 +337,10 @@ a {
   .media {
     flex-wrap: wrap;
   }
+
+  .band .band-endorsers {
+    flex-direction: column;
+}
 
   .contact .contact-links .contact-link i {
     font-size: 2rem;
