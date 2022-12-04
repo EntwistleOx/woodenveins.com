@@ -196,14 +196,21 @@ a {
   text-align: center;
 }
 
-.contact address{
-    padding: 2rem 2rem 0;
-  }
-
 .contact .contact-links {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.contact .contact-addresses {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contact .contact-addresses address{
+    padding: 2rem 2rem 0;
 }
 
 .band p {
@@ -213,6 +220,14 @@ a {
 .band p:last-of-type,
 .manifest p:last-of-type {
   margin-bottom: 0;
+}
+
+.band .band-endorsers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0 0;
 }
 
 .band .band-photo,
