@@ -99,7 +99,6 @@
   .header {
     overflow: hidden;
     background-color: rgba(14, 14, 17, 0.6);
-    /* position: fixed; */
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -175,6 +174,9 @@
       background: #000000;
       text-align: center;
       padding: 2rem;
+      z-index: 1;
+      position: absolute;
+      width: 100%;
     }
     
     .footer .social-links {
@@ -193,57 +195,6 @@
       font-size: 0.72rem;
     }
   
-  @media (max-width: 844px) {
-    .header {
-      padding: 1rem 2rem;
-    }
-  
-    .nav-bars {
-      display: block;
-    }
-  
-    .nav-logo .nav-logo-mobile {
-      display: block;
-    }
-  
-    .nav-logo .nav-logo-desktop {
-      display: none;
-    }
-  
-    .nav-links {
-      display: none;
-    }
-  
-    .nav-link {
-      display: none;
-    }
-  
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1rem;
-    }
-  
-    .sidebar .nav-link {
-      padding: 0;
-    }
-  
-    .media {
-      flex-wrap: wrap;
-    }
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidebar {
-      padding-top: 15px;
-    }
-    .sidebar a {
-      font-size: 18px;
-    }
-  }
-  
   #overlay {
       display: none;
       position: fixed;
@@ -259,8 +210,7 @@
     }
 
   #overlay-tearing-seas {
-      display: block;
-      position: absolute;
+      position: fixed;
       width: 50%;
       height: 89%;
       top: 0;
@@ -268,9 +218,8 @@
       right: 0;
       bottom: 0;
       background-color: rgba(0, 0, 0, 0.3);
+      padding: 2rem 6vw;
       z-index: 0;
-      cursor: pointer;
-      padding: 0 5rem;
 
       line-height: 1.5;
       font-family: 'Cinzel', serif;
@@ -281,10 +230,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     #overlay-tearing-seas h2 {
-        font-size: 4.5rem;
+        font-size: 4.5vw;
         font-weight: 400;
     }
 
@@ -298,17 +248,17 @@
     }
 
     #overlay-tearing-seas h3 {
-        font-size: 2.5rem;
+        font-size: 2.5vw;
         font-weight: 600;
     }
 
     .overlay-tearing-seas-data .overlay-tearing-seas-logo {
         width: 150px;
-        margin: 11rem 0;
+        margin: 10rem 0;
     }
 
     #overlay-tearing-seas p {
-        font-size: 3.68rem;
+        font-size: 3.5vw;
         font-weight: 400;
     }
 
@@ -320,3 +270,114 @@
         flex-wrap: wrap;
     }
 
+    @media (max-width: 900px) {
+        .header {
+          padding: 1rem 2rem;
+        }
+      
+        .nav-bars {
+          display: block;
+        }
+      
+        .nav-logo .nav-logo-mobile {
+          display: block;
+        }
+      
+        .nav-logo .nav-logo-desktop {
+          display: none;
+        }
+      
+        .nav-links {
+          display: none;
+        }
+      
+        .nav-link {
+          display: none;
+        }
+      
+        .sidebar {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1rem;
+        }
+      
+        .sidebar .nav-link {
+          padding: 0;
+        }
+      
+        .media {
+          flex-wrap: wrap;
+        }
+    
+        #overlay-tearing-seas {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
+
+        #overlay-tearing-seas h2 {
+            font-size: 2rem;
+        }
+    
+        #overlay-tearing-seas hr {
+            height: 2px;
+        }
+    
+        #overlay-tearing-seas h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+    
+        .overlay-tearing-seas-data .overlay-tearing-seas-logo {
+            width: 90px;
+            margin: 2rem 0;
+        }
+    
+        #overlay-tearing-seas p {
+            font-size: 1.5rem;
+            margin-bottom: .8rem;
+        }
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidebar {
+          padding-top: 15px;
+        }
+
+        .sidebar a {
+          font-size: 18px;
+        }
+
+        #overlay-tearing-seas h2 {
+            font-size: 3rem;
+        }
+    
+        #overlay-tearing-seas hr {
+            height: 2px;
+        }
+    
+        #overlay-tearing-seas h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+        }
+    
+        .overlay-tearing-seas-data .overlay-tearing-seas-logo {
+            width: 100px;
+            margin: 3rem 0;
+        }
+    
+        #overlay-tearing-seas p {
+            font-size: 1.4rem;
+        }
+    
+        #overlay-tearing-seas .overlay-tearing-seas-streaming {
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+      }
