@@ -271,6 +271,16 @@
     }
 
     @media (max-width: 900px) {
+
+        .webp .container {
+            background-position: -200px 0;
+          }
+          
+          .no-webp .container {
+            background-position: -200px 0;
+          }
+
+          
         .header {
           padding: 1rem 2rem;
         }
@@ -380,4 +390,6 @@
             gap: 1rem;
             flex-wrap: wrap;
         }
+
+
       }
