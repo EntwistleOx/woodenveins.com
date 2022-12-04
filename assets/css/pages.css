@@ -354,6 +354,8 @@ a {
     font-size: 2rem;
   }
 
+
+
   .releases .album-photo {
     order: 1;
   }
@@ -365,6 +367,12 @@ a {
   .releases .album-data {
     order: 2;
   }
+
+  .contact .contact-addresses {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
 }
 
 @media screen and (max-height: 450px) {
@@ -374,6 +382,8 @@ a {
   .sidebar a {
     font-size: 18px;
   }
+
+
 }
 
 #overlay {
