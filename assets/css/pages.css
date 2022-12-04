@@ -14,7 +14,7 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: background-color 0.5s;
   color: #ffffff;
   background-color: rgb(14, 14, 17);
@@ -77,8 +77,8 @@ a {
 }
 
 .webp .container {
-  background-image: url('../img/back1.webp');
-  height: 11%;
+  background-image: url("../img/back1.webp");
+  height: 101px;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -87,8 +87,8 @@ a {
 }
 
 .no-webp .container {
-  background-image: url('../img/back1.png');
-  height: 11%;
+  background-image: url("../img/back1.png");
+  height: 101px;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@ a {
 
 .header {
   overflow: hidden;
-  background-color: rgba(14, 14, 17, 0.6);
+  background-color: rgba(14, 14, 17, 0.3);
   /* position: fixed; */
   position: absolute;
   bottom: 89%;
@@ -107,10 +107,10 @@ a {
 }
 
 .header-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 .nav {
   display: flex;
@@ -123,11 +123,11 @@ a {
 }
 
 .nav-logo {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
 .nav-logo .nav-logo-desktop {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: -6px;
 }
@@ -181,11 +181,11 @@ a {
 } */
 
 .releases .rel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .manifest {
@@ -204,14 +204,14 @@ a {
 }
 
 .contact .contact-addresses {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
-.contact .contact-addresses address{
-    padding: 2rem 2rem 0;
+.contact .contact-addresses address {
+  padding: 2rem 2rem 0;
 }
 
 .band p {
@@ -224,18 +224,18 @@ a {
 }
 
 .band .band-endorsers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0 0;
 }
 
 .band .band-endorsers-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .band .band-photo,
@@ -250,12 +250,12 @@ a {
 }
 
 .releases .album-photo {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .releases .album-player {
-    max-width: 440px;
-    width: 100%;
+  max-width: 440px;
+  width: 100%;
 }
 
 .band .band-list {
@@ -274,7 +274,7 @@ a {
 } */
 
 .footer {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-weight: 500;
   background: #000000;
   text-align: center;
@@ -298,6 +298,14 @@ a {
 }
 
 @media (max-width: 844px) {
+  .webp .container {
+    height: 73px;
+  }
+
+  .no-webp .container {
+    height: 73px;
+  }
+
   .header {
     padding: 1rem 2rem;
   }
@@ -340,23 +348,23 @@ a {
 
   .band .band-endorsers {
     flex-direction: column;
-}
+  }
 
   .contact .contact-links .contact-link i {
     font-size: 2rem;
-    }
+  }
 
-    .releases .album-photo {
-        order: 1;
-    }
-    .releases .album-player {
-        order: 3;
-        max-width: none;
-        width: 100%;
-    }
-    .releases .album-data {
-        order: 2;
-    }
+  .releases .album-photo {
+    order: 1;
+  }
+  .releases .album-player {
+    order: 3;
+    max-width: none;
+    width: 100%;
+  }
+  .releases .album-data {
+    order: 2;
+  }
 }
 
 @media screen and (max-height: 450px) {
