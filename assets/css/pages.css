@@ -77,8 +77,8 @@ a {
 }
 
 .webp .container {
-  background-image: url('../img/background.webp');
-  height: 45%;
+  background-image: url('../img/back1.webp');
+  height: 11%;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -87,8 +87,8 @@ a {
 }
 
 .no-webp .container {
-  background-image: url('../img/background.png');
-  height: 45%;
+  background-image: url('../img/back1.png');
+  height: 11%;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ a {
   background-color: rgba(14, 14, 17, 0.6);
   /* position: fixed; */
   position: absolute;
-  bottom: 55%;
+  bottom: 89%;
   width: 100%;
   padding: 1.2rem 2rem 1rem;
 }
@@ -170,6 +170,7 @@ a {
   max-width: 960px;
   margin: auto;
   text-align: justify;
+  min-height: 100%;
 }
 
 /* .releases .album-info {
