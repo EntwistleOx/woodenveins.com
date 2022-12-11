@@ -83,7 +83,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: margin-left 0.5s;
+    /* transition: margin-left 0.5s;
+    animation: kbsl 60s infinite; */
   }
   
   .no-webp .container {
@@ -93,7 +94,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: margin-left 0.5s;
+    /* transition: margin-left 0.5s;
+    animation: kbsl 60s infinite; */
   }
   
   .header {
@@ -411,6 +413,22 @@
             padding: .8rem 0;
         }
       }
+
+      /* .kbslider {
+        animation: kbsl 60s infinite;
+       } */
+       
+       @keyframes kbsl {
+        0% {
+         transform:scale(1)
+        }
+        50% {
+         transform:scale(1.2)
+        }
+        100% {
+         transform:scale(1)
+        }
+       }
 
     /* Media queries */
     /* 
