@@ -120,6 +120,7 @@
   .nav-bars {
     display: none;
   }
+
   .nav-logo {
       font-family: 'Cinzel', serif;
     }
@@ -254,7 +255,7 @@
 
     .overlay-tearing-seas-data .overlay-tearing-seas-logo {
         width: 150px;
-        margin: 10rem 0;
+        margin: 8rem 0;
     }
 
     #overlay-tearing-seas p {
@@ -271,16 +272,6 @@
     }
 
     @media (max-width: 900px) {
-
-        .webp .container {
-            background-position: -200px 0;
-          }
-          
-          .no-webp .container {
-            background-position: -200px 0;
-          }
-
-          
         .header {
           padding: 1rem 2rem;
         }
@@ -332,7 +323,7 @@
           }
 
         #overlay-tearing-seas h2 {
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
     
         #overlay-tearing-seas hr {
@@ -340,7 +331,7 @@
         }
     
         #overlay-tearing-seas h3 {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             font-weight: 600;
         }
     
@@ -350,19 +341,19 @@
         }
     
         #overlay-tearing-seas p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: .8rem;
         }
       }
       
       @media screen and (max-height: 450px) {
-        .sidebar {
+        /* .sidebar {
           padding-top: 15px;
         }
 
         .sidebar a {
           font-size: 18px;
-        }
+        } */
 
         #overlay-tearing-seas h2 {
             font-size: 3rem;
@@ -390,6 +381,71 @@
             gap: 1rem;
             flex-wrap: wrap;
         }
-
-
       }
+
+    @media (max-height: 960px) {
+      .header {
+        padding: 0.9rem 2rem;
+      }
+    }
+
+    @media (max-height: 415px) and (orientation: landscape) {
+        #overlay-tearing-seas h2 {
+            font-size: 2rem;
+        }
+
+        #overlay-tearing-seas hr {
+            height: 1px;
+        }
+    
+        #overlay-tearing-seas h3 {
+            font-size: 1rem;
+        }
+    
+        .overlay-tearing-seas-data .overlay-tearing-seas-logo {
+            display: none;
+        }
+    
+        #overlay-tearing-seas p {
+            font-size: 1rem;
+            padding: .8rem 0;
+        }
+      }
+
+    /* Media queries */
+    /* 
+    $iphone4: 320px;
+    $galaxyS5: 360px;
+    $iphoneX: 375px;
+    $iphonePlus: 414px;
+    $medium-device: 768px;
+    $large-device: 992px;
+    $md-large-port: 1024px;
+    $max-large-device: 1300px;
+    $large-device-desktop: 1460px; 
+    */
+
+    /* 
+    @media (min-height: 768px) and (max-width: 990px) {
+        min-height: 50px;
+    }
+    @media (min-width: 375px) and (max-width: 767px) {
+        min-height: 50px;
+    }
+    @media (min-width: 321px) and (max-width: 374px) {
+        min-height: 51px;
+    }
+    @media (max-width: 320px) {
+        min-height: 48px;
+    }
+
+	@media (max-width: $max-large-device){
+		min-width: 100%;
+	}
+	@media (max-width: $large-device) {
+		padding: 10px;
+	}
+	@media (max-width: $iphone4) {
+		padding: 10px 0px;
+	} 
+    */

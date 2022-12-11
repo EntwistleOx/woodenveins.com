@@ -78,7 +78,7 @@ a {
 
 .webp .container {
   background-image: url("../img/back1.webp");
-  height: 101px;
+  height: 96px;
   /* background-attachment: fixed; */
   background-position: right center;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ a {
 
 .no-webp .container {
   background-image: url("../img/back1.png");
-  height: 101px;
+  height: 96px;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ a {
   background-color: rgba(14, 14, 17, 0.3);
   /* position: fixed; */
   position: absolute;
-  bottom: 89%;
+  bottom: 90%;
   width: 100%;
   padding: 1.2rem 2rem 1rem;
 }
@@ -299,15 +299,16 @@ a {
 
 @media (max-width: 844px) {
   .webp .container {
-    height: 73px;
+    height: 67px;
   }
 
   .no-webp .container {
-    height: 73px;
+    height: 67px;
   }
 
   .header {
     padding: 1rem 2rem;
+    /* bottom: 93%; */
   }
 
   .nav-bars {
@@ -353,8 +354,6 @@ a {
   .contact .contact-links .contact-link i {
     font-size: 2rem;
   }
-
-
 
   .releases .album-photo {
     order: 1;
