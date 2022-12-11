@@ -88,7 +88,7 @@
   }
   
   .no-webp .container {
-    background-image: url('../img/tearing-seas.png');
+    background-image: url('../img/tearing-seas.jpg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -100,7 +100,7 @@
   
   .header {
     overflow: hidden;
-    background-color: rgba(14, 14, 17, 0.6);
+    background-color: rgba(14, 14, 17, 0.2);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -220,7 +220,7 @@
       left: 25%;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.2);
       padding: 2rem 6vw;
       z-index: 0;
 
