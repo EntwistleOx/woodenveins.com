@@ -78,7 +78,7 @@ a {
 
 .webp .container {
   background-image: url("../img/back1.webp");
-  height: 96px;
+  height: 95px;
   /* background-attachment: fixed; */
   background-position: right center;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ a {
 
 .no-webp .container {
   background-image: url("../img/back1.png");
-  height: 96px;
+  height: 95px;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -98,10 +98,10 @@ a {
 
 .header {
   overflow: hidden;
-  background-color: rgba(14, 14, 17, 0.3);
+  background-color: rgba(14, 14, 17, 0.4);
   /* position: fixed; */
   position: absolute;
-  bottom: 90%;
+  top: 0px;
   width: 100%;
   padding: 1.2rem 2rem 1rem;
 }
@@ -204,15 +204,17 @@ a {
 }
 
 .contact .contact-addresses {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
 }
 
-.contact .contact-addresses address {
-  padding: 2rem 2rem 0;
-}
+.contact .contact-addresses a {
+    display: block;
+  }
 
 .band p {
   margin-bottom: 1rem;
@@ -308,7 +310,6 @@ a {
 
   .header {
     padding: 1rem 2rem;
-    /* bottom: 93%; */
   }
 
   .nav-bars {
@@ -366,12 +367,6 @@ a {
   .releases .album-data {
     order: 2;
   }
-
-  .contact .contact-addresses {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
 }
 
 @media screen and (max-height: 450px) {
@@ -398,3 +393,9 @@ a {
   z-index: 2;
   cursor: pointer;
 }
+
+@media (max-height: 415px) and (orientation: landscape) {
+    .header {
+        bottom: 81%;
+      }
+  }
