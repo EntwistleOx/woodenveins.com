@@ -77,7 +77,7 @@
   }
   
   .webp .container {
-    background-image: url('../img/tearing-seas.webp');
+    background-image: url('../img/broken-world.webp');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -88,7 +88,7 @@
   }
   
   .no-webp .container {
-    background-image: url('../img/tearing-seas.jpg');
+    background-image: url('../img/broken-world.jpg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -220,12 +220,13 @@
       left: 25%;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.2);
+      /* background-color: rgba(0, 0, 0, 0.2); */
       padding: 2rem 6vw;
       z-index: 0;
 
       line-height: 1.5;
       font-family: 'Cinzel', serif;
+      color: #9c9c85;
     }
 
     .overlay-tearing-seas-data {
@@ -245,8 +246,8 @@
         width: 100%;
         border: none;
         height: 3px;
-        color: #ffffff;
-        background-color: #ffffff;
+        color: #9c9c85;
+        background-color: #9c9c85;
         margin-bottom: 1rem;
     }
 

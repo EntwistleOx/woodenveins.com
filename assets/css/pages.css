@@ -77,7 +77,7 @@ a {
 }
 
 .webp .container {
-  background-image: url("../img/tearing-seas.webp");
+  background-image: url("../img/broken-world.webp");
   height: 95px;
   /* background-attachment: fixed; */
   background-position: right center;
@@ -87,7 +87,7 @@ a {
 }
 
 .no-webp .container {
-  background-image: url("../img/tearing-seas.png");
+  background-image: url("../img/broken-world.png");
   height: 95px;
   /* background-attachment: fixed; */
   background-position: center;
