@@ -77,20 +77,20 @@ a {
 }
 
 .webp .container {
-  background-image: url("../img/broken-world.webp");
+  background-image: url("../img/ganymede.webp");
   height: 95px;
   /* background-attachment: fixed; */
-  background-position: right center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   /* transition: margin-left 0.5s; */
 }
 
 .no-webp .container {
-  background-image: url("../img/broken-world.png");
+  background-image: url("../img/ganymede.png");
   height: 95px;
   /* background-attachment: fixed; */
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   /* transition: margin-left 0.5s; */
