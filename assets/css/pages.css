@@ -77,7 +77,7 @@ a {
 }
 
 .webp .container {
-  background-image: url("../img/ganymede.webp");
+  background-image: url("../img/background.webp");
   height: 95px;
   /* background-attachment: fixed; */
   background-position: bottom;
@@ -87,7 +87,7 @@ a {
 }
 
 .no-webp .container {
-  background-image: url("../img/ganymede.png");
+  background-image: url("../img/background.jpg");
   height: 95px;
   /* background-attachment: fixed; */
   background-position: bottom;
@@ -186,6 +186,7 @@ a {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .manifest {
@@ -216,9 +217,9 @@ a {
     display: block;
   }
 
-.band p {
-  margin-bottom: 1rem;
-}
+  .band .band-endorsers-title {
+    text-align: center;
+  }
 
 .band p:last-of-type,
 .manifest p:last-of-type {
@@ -230,7 +231,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 1rem 0 0;
+  padding: 1rem 0;
 }
 
 .band .band-endorsers-group {
@@ -239,6 +240,10 @@ a {
   align-items: center;
   gap: 2rem;
 }
+
+.band .band-endorsers-group img {
+    max-width: 200px;
+  }
 
 .band .band-photo,
 .manifest .manifest-photo,
@@ -350,6 +355,10 @@ a {
 
   .band .band-endorsers {
     flex-direction: column;
+  }
+
+  .band .band-endorsers-group img {
+    max-width: 120px;
   }
 
   .contact .contact-links .contact-link i {
